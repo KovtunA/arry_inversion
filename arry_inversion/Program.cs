@@ -7,9 +7,10 @@ namespace arry_inversion
         static void Main(string[] args)
         {
             int[] arr = new int[10];
-
-            for (int i = 0; i < arr.Length; i++) {
-                arr[i] = (new Random()).Next(1000) - 500;
+            Random rand = new Random();
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = rand.Next(1000) - 500;
             }
 
             Console.WriteLine("Random array:\n");
